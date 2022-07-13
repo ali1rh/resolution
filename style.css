@@ -1,0 +1,170 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 2000px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: lightgrey;
+}
+
+.template {
+  display: none;
+}
+
+div.bar {
+  width: 20px;
+  top: 0px;
+}
+
+.bar > .text {
+  box-sizing: border-box;
+  width: 65vh;
+  background-color: white;
+  opacity: 0.7;
+  height: 20px;
+  padding: 0px 8px;
+  transform: rotate(90deg);
+  transform-origin: left bottom 0;
+}
+
+.fixedpercent {
+  position: fixed;
+  height: 99%;
+  background-color: lightsteelblue;
+}
+
+.fixedvh {
+  position: fixed;
+  height: 99vh;
+  background-color: lightskyblue;
+}
+
+.abspercent {
+  position: absolute;
+  height: 99%;
+  background-color: darksalmon;
+}
+
+.absvh {
+  position: absolute;
+  height: 99vh;
+  background-color: coral;
+}
+
+.textfixed {
+  box-sizing: border-box;
+  width: 65vh;
+  background-color: white;
+  opacity: 0.7;
+  height: 20px;
+  padding: 0px 80px;
+  transform: rotate(90deg);
+  transform-origin: left bottom 0;
+}
+
+.textabs {
+  box-sizing: border-box;
+  width: 65vh;
+  background-color: white;
+  opacity: 0.7;
+  height: 20px;
+  padding: 0px 80px;
+  transform: rotate(90deg);
+  transform-origin: left bottom 0;
+}
+
+#consoleContainer {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 100vh;
+}
+
+#console {
+  position: absolute;
+  left: 0px;
+  right: 100px;
+}
+.innerHeightLog {
+  position: fixed;
+  top: 0;
+  right: 100px;
+  width: 180px;
+  height: 40px;
+  background-color: chartreuse;
+}
+
+#optionsbox {
+  position: fixed;
+  padding: 5px;
+  left: 15px;
+  right: 15px;
+  top: 15px;
+  bottom: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 7px 6px 14px 0px black;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#optionsbox h1 {
+  margin: 0;
+}
+
+#optionsbox > .optionsheader {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px 0 10px;
+}
+
+#optionsbox > .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+#optionsbox > .container > * {
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+  padding-left: 8px;
+  margin-bottom: 5px;
+}
+
+
+.option {
+    border-left: 1px blue solid;
+  display: flex;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.option input[type="checkbox"] {
+  width: 2em;
+  height: 2em;
+}
+
+#btnClose:after {
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  width: 37px;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 300;
+  display: inline-block;
+  content: "\00d7"; /* This will render the 'X' */
+}
+
+#btnClose:hover {
+  cursor: pointer;
+}
