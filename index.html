@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>test</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="script3.js"></script>
+  </head>
+
+  <body onresize="resized()">
+    <button id="btnOptions">Options</button>
+    <div id="consoleContainer">
+      <div id="console">
+        <br />
+        OnResize handler calls will be displayed below with window.innerWidth and
+        documentElement.clientHeight<br /><br />
+      </div>
+    </div>
+    <div id="templateBar" class="template bar">
+      <div class="text">unit-text position:</div>
+    </div>
+    <div id="barContainer"></div>
+    <!--
+<div style="right: 0px" class="bar fixedpercent"><div class="textfixed">percentage-based position:fixed</div></div>
+<div style="right: 25px" class="bar fixedvh"><div class="textfixed">viewport-unit position:fixed</div></div>
+<div style="right: 50px" class="bar abspercent"><div class="textabs">percentage-based position:absolute</div></div>
+<div style="right: 75px" class="bar absvh"><div class="textabs">viewport-unit position:absolute</div></div>
+-->
+    <div class="innerHeightLog"></div>
+    
+    <div id="optionsbox" class="hidden">
+      <div class="optionsheader">
+        <h1>Options</h1>
+        <div id="btnClose"></div>
+      </div>
+      <div class="container">
+        <div>
+          <h3>Position:</h3>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="optPosAbs" name="optPosAbs" checked />
+          <label for="optPosAbs">position: absolute</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="optPosFixed" name="optPosFixed" checked />
+          <label for="optPosFixed">position: fixed</label>
+        </div>
+        <div>
+          <h3>Units:</h3>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="optPercent" name="optPercent" checked />
+          <label for="optPercent">precentage-based</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="optVh" name="optVh" checked />
+          <label for="optVh">vh</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="optLvh" name="optLvh" checked />
+          <label for="optLvh">lvh</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="optSvh" name="optSvh" checked />
+          <label for="optSvh">svh</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="optDvh" name="optSvh" checked />
+          <label for="optDvh">dvh</label>
+        </div>
+        <div>
+          <h3>Misc:</h3>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="optLogging" name="optLogging" checked />
+          <label for="optLogging">Enable Resize Event Logging</label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
